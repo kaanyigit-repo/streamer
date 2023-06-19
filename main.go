@@ -37,7 +37,7 @@ func downloadVideoAndExtractAudio(id string, out io.Writer) error {
 	url := fmt.Sprintf("https://youtube.com/watch?v=" + id)
 	//ytdl := exec.Command("youtube-dl", id)
 
-	ytdl := exec.Command("youtube-dl", url, "-o-")
+	ytdl := exec.Command("youtube-dl", url, "-o", "-")
 	ytdl.Stdout = out
 	ytdl.Stderr = os.Stderr // show progress
 
