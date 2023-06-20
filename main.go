@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	var url string
-	greet(url)
+	var addr string
+	greet(addr)
 
 }
 func greet(web string) {
